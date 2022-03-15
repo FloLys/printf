@@ -12,7 +12,7 @@ int (*print_sel(char idsel))(va_list)
 		{"%", _print_mod},
 		{"d", _print_i},
 		{"i", _print_i},
-		{"u", _print_i},
+		{"u", _print_ui},
 		{'\0', NULL}
 	};
 

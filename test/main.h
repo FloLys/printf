@@ -14,6 +14,7 @@ int _print_c(va_list list);
 int _print_s(va_list list);
 int _print_mod(va_list list);
 int _print_i(va_list list);
+int _print_ui(va_list list);
 int _pwr(int, int);
 
 /**

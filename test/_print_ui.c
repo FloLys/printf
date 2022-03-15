@@ -1,30 +1,21 @@
 #include "main.h"
 
 /**
-* _print_i - prints decimals and integers
-* @list: arg from list
+* _print_ui - prints unsigned integers
+* @i: int from list below 0
 * Return: counter
 */
-int _print_i(va_list list)
+int _print_ui(va_list list)
 {
 	int cn = 0, digit = 0, a = 1;
 	unsigned int j;
-	int i = va_arg(list, int);
+	unsigned int i = va_arg(list, int);
 
 	if (i == 0 || i == '\0')
 		return (_putchar('0'));
+	
+	j = i;
 
-	if (i < 0)
-	{
-		_putchar('-');
-		cn++;
-		i = i * -1;
-		j = i;
-	}
-	else
-	{
-		j = i;
-	}
 	while (i > 0)
 	{
 		i /= 10;

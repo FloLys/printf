@@ -12,18 +12,20 @@ int _print_i(va_list list)
 	int i = va_arg(list, int);
 
 	if (i == 0 || i == '\0')
-		return (_putchar('\0'));
+		return (_putchar('0'));
 
 	if (i < 0)
 	{
 		_putchar('-');
 		cn++;
-		j = i * -1;
+		i = i * -1;
+		j = i;
 	}
 	else
+	{
 		j = i;
-
-	while (i != 0)
+	}
+	while (i > 0)
 	{
 		i /= 10;
 		digit++;
