@@ -25,7 +25,7 @@ int _print_i(va_list list)
 	{
 		j = i;
 	}
-	while (i > 0)
+	while (i != 0)
 	{
 		i /= 10;
 		digit++;

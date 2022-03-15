@@ -2,7 +2,7 @@
 
 /**
 * _print_ui - prints unsigned integers
-* @i: int from list below 0
+* @list: int from list below 0
 * Return: counter
 */
 int _print_ui(va_list list)
@@ -11,9 +11,6 @@ int _print_ui(va_list list)
 	unsigned int j;
 	unsigned int i = va_arg(list, int);
 
-	if (i == 0 || i == '\0')
-		return (_putchar('0'));
-	
 	j = i;
 
 	while (i > 0)
