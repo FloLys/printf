@@ -10,6 +10,9 @@ int (*print_sel(char idsel))(va_list)
 		{"c", _print_c},
 		{"s", _print_s},
 		{"%", _print_mod},
+		{"d", _print_i},
+		{"i", _print_i},
+		{"u", _print_i},
 		{'\0', NULL}
 	};
 

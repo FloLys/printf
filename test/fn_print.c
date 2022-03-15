@@ -51,26 +51,3 @@ int _print_mod(va_list list)
 
 	return (cn);
 }
-/**
-* _print_i - prints decimals and integers
-* @list: arg from list
-* Return: counter
-*/
-int _print_i(va_list list)
-{
-	int j = i, cn = 0;
-	int i = va_arg(list, int);
-
-	if (i == NULL)
-		return (-1);
-
-	while (i < 0)
-	{
-		i /= 10;
-		cn++;
-	}
-
-	
-
-	return (cn);
-}

@@ -13,6 +13,8 @@ int _print_c(va_list list);
 int _print_c(va_list list);
 int _print_s(va_list list);
 int _print_mod(va_list list);
+int _print_i(va_list list);
+int _pwr(int, int);
 
 /**
 * struct structu - struct as a selector to char and to function pointer as args
