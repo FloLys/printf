@@ -12,13 +12,13 @@ int _print_b(va_list list)
 	unsigned int n = num;
 	char *str;
 
-	if (n == 0)
+	if (!n)
 	{
 		_putchar('0');
 		return (1);
 	}
 
-	while (n > 0)
+	while (n != 0)
 	{
 		n /= 2;
 		digit++;
@@ -37,7 +37,7 @@ int _print_b(va_list list)
 		i++;
 	}
 
-	while (i >= 0)
+	while (i != 0)
 	{
 		i--;
 		_putchar(str[i] + '0');
