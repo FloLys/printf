@@ -17,7 +17,7 @@ int _print_b(va_list list)
 		_putchar('0');
 		return (1);
 	}
-	
+
 	while (n > 0)
 	{
 		n /= 2;
@@ -36,7 +36,7 @@ int _print_b(va_list list)
 		n /= 2;
 		i++;
 	}
-		
+
 	while (i >= 0)
 	{
 		i--;
@@ -64,7 +64,7 @@ int _print_o(va_list list)
 		_putchar('0');
 		return (1);
 	}
-	
+
 	while (n != 0)
 	{
 		n /= 8;
@@ -83,7 +83,7 @@ int _print_o(va_list list)
 		n /= 8;
 		i++;
 	}
-		
+
 	while (i != 0)
 	{
 		i--;
