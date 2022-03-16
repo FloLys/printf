@@ -13,27 +13,21 @@ int (*print_sel(char idsel))(va_list)
 		{"d", _print_i},
 		{"i", _print_i},
 		{"u", _print_ui},
+		{"b", _print_b},
+		{"o", _print_o},
 		{'\0', NULL}
 	};
 
-	int j = 0;
+	int j;
 
 	for (j = 0; fnarray[j].argument != NULL; j++)
 	{
 		if (idsel == *fnarray[j].argument)
 		{
-			return (fnarray[j].f);
+		return (fnarray[j].f);
 		}
 	}
 	_putchar('%');
 	_putchar(idsel);
-/*
-*	solution without unkown file (for simple main file)
-*		if (fnarray[j].argument == NULL)
-*		{
-*			_putchar('%');
-*			cn++;
-*		}
-*/
 	return (fn_unk);
 }
