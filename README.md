@@ -10,6 +10,7 @@
      identifiers with the correspondant ARGUMENT instead to stdout.
      Return the number of characters printed excluding the null byte used
      to end output to strings. Writes output to stdout stream.
+     ![Flowchart](https://github.com/FloLys/printf/blob/0a4f6b09eee2dc75665c98a2c0057ed1e07216b2/test/Flowchart%20_printf.png)
 
 ##### IDENTIFIERS
 
